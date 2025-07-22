@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Blog Hosting</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Inter font from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* Lightest blue-gray background */
+            color: #334155; /* Dark text for readability */
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1.5rem;
+        }
+        /* Custom styles for better readability and aesthetics */
+        .blog-post {
+            background-color: #ffffff;
+            border-radius: 1rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            padding: 2.5rem;
+            margin-bottom: 2rem;
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+        .blog-post:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+        }
+        .blog-post h2 {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #1e3a8a; /* Dark blue for headings */
+            margin-bottom: 0.75rem;
+        }
+        .blog-post .date {
+            font-size: 0.9rem;
+            color: #64748b; /* Gray for dates */
+            margin-bottom: 1.5rem;
+            display: block;
+        }
+        .blog-post p {
+            margin-bottom: 1rem;
+            font-size: 1.05rem;
+        }
+        .blog-post a {
+            color: #3b82f6; /* Blue for links */
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s ease;
+        }
+        .blog-post a:hover {
+            color: #2563eb; /* Darker blue on hover */
+            text-decoration: underline;
+        }
+        .header-nav a {
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+            transition: background-color 0.2s ease, color 0.2s ease;
+        }
+        .header-nav a:hover {
+            background-color: #e0f2fe; /* Light blue background on hover */
+            color: #1e40af; /* Darker blue text on hover */
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="bg-white shadow-sm py-6">
+        <div class="container flex flex-col sm:flex-row justify-between items-center">
+            <h1 class="text-4xl font-extrabold text-gray-900 mb-4 sm:mb-0">
+                <a href="#" class="hover:text-blue-600 transition-colors">My Awesome Blog</a>
+            </h1>
+            <nav class="header-nav">
+                <ul class="flex space-x-4">
+                    <li><a href="#" class="text-gray-700 hover:text-blue-600">Home</a></li>
+                    <li><a href="#" class="text-gray-700 hover:text-blue-600">About</a></li>
+                    <li><a href="#" class="text-gray-700 hover:text-blue-600">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Section -->
+    <main class="container py-8">
+        <section class="blog-list">
+            <!-- Blog Post 1 -->
+            <article class="blog-post">
+                <h2>The Art of Minimalist Living</h2>
+                <span class="date">July 22, 2025</span>
+                <p>
+                    In a world filled with clutter and constant consumption, minimalist living offers a refreshing alternative. It's not just about decluttering your physical space, but also about simplifying your mind and focusing on what truly matters. This post explores the core principles of minimalism and how you can start incorporating them into your daily life.
+                </p>
+                <a href="#">Read More &rarr;</a>
+            </article>
+
+            <!-- Blog Post 2 -->
+            <article class="blog-post">
+                <h2>A Beginner's Guide to Stargazing</h2>
+                <span class="date">July 18, 2025</span>
+                <p>
+                    Have you ever looked up at the night sky and felt a sense of wonder? Stargazing is a captivating hobby that connects us to the vastness of the universe. This guide will walk you through the essentials, from finding a dark sky location to identifying constellations and planets with the naked eye or a simple telescope.
+                </p>
+                <a href="#">Read More &rarr;</a>
+            </article>
+
+            <!-- Blog Post 3 -->
+            <article class="blog-post">
+                <h2>Mastering Remote Work Productivity</h2>
+                <span class="date">July 10, 2025</span>
+                <p>
+                    Remote work has become a new norm for many, offering flexibility but also unique challenges. Maintaining productivity and work-life balance requires discipline and effective strategies. Discover practical tips for setting up your home office, managing your time, and staying connected with your team.
+                </p>
+                <a href="#">Read More &rarr;</a>
+            </article>
+
+            <!-- Blog Post 4 -->
+            <article class="blog-post">
+                <h2>The Joys of Home Baking: Sourdough Edition</h2>
+                <span class="date">July 05, 2025</span>
+                <p>
+                    There's something incredibly satisfying about baking your own bread, especially sourdough. The process, from feeding your starter to the final golden crust, is a journey of patience and reward. This post shares my personal sourdough journey, tips for beginners, and a simple recipe to get you started.
+                </p>
+                <a href="#">Read More &rarr;</a>
+            </article>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white py-6 mt-8">
+        <div class="container text-center text-gray-400">
+            <p>&copy; 2025 My Awesome Blog. All rights reserved.</p>
+            <p class="mt-2">Built with <span class="text-red-500">&hearts;</span> and Tailwind CSS.</p>
+        </div>
+    </footer>
+</body>
+</html>
